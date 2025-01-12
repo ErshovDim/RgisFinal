@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rgis1", "Rgis1\Rgis1.csproj", "{5055CDC3-5334-4EF4-979B-EBA1F15E0E7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{FAD35E6A-39E8-4DD5-B5C7-6D47806BAFA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5055CDC3-5334-4EF4-979B-EBA1F15E0E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5055CDC3-5334-4EF4-979B-EBA1F15E0E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5055CDC3-5334-4EF4-979B-EBA1F15E0E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD35E6A-39E8-4DD5-B5C7-6D47806BAFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD35E6A-39E8-4DD5-B5C7-6D47806BAFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD35E6A-39E8-4DD5-B5C7-6D47806BAFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD35E6A-39E8-4DD5-B5C7-6D47806BAFA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
