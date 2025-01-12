@@ -27,6 +27,6 @@ jobs:
           context: ./Rgis1
           file: ./Rgis1/Dockerfile
           push: true
-          tags: dmitryershovferi/rgis-2:latest, dmitryershovferi/rgis-2:${{ github.sha }}
+          tags: dmitryershovferi/rgisfi:latest, dmitryershovferi/rgisfi:${{ github.sha }}
       - name: Run unit tests
         run: dotnet test ./TestProject1/TestProject1.csproj
