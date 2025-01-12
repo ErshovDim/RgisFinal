@@ -8,6 +8,8 @@ namespace TestProject1
         [Fact]
         public void Test_ChangePregled()
         {
+
+            /
             Knjiga testKniga = new Knjiga("Doglapan", "Ashneer Grover", "This is the unfettered story of Ashneer Grover-the favourite and misunderstood poster boy of Start-up India.", "Biography");
             testKniga.ChangePregled("Good book");
             Assert.Equal(testKniga.pregled, "Good book");
