@@ -11,16 +11,16 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["BlazorApp1.csproj", "."]
 
-RUN dotnet restore "./././BlazorApp1.csproj"
+RUN dotnet restore "./././Rgis1.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "./BlazorApp1.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./Rgis1.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./BlazorApp1.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Rgis1.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "BlazorApp1.dll"]
+ENTRYPOINT ["dotnet", "Rgis1.dll"]
