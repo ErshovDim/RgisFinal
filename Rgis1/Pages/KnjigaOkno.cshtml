@@ -1,0 +1,30 @@
+﻿@page
+@model RGIS.Pages.KnjigaOknoModel
+@{
+    <div class="text-center">
+        <h1 class="display-4">@Model.NewKnjiga.naziv</h1>
+        <h2>Avtor: @Model.NewKnjiga.Avotr</h2>
+        <br></br>
+        
+
+        <h2>Opis </h2>
+        <h4>@Model.NewKnjiga.opis</h4>
+        <br></br>
+        
+
+        <h2> Pregled</h2>
+        <h4>@Model.NewKnjiga.pregled</h4>
+        <br></br>
+        <br></br>
+    </div>
+    <form method="post">
+        <div>
+
+            <a asp-page="/PregledOkno" asp-route-ID="@Model.NewKnjiga.Id" class="btn btn-primary">  Dodaj pregled  </a>
+        <br></br>
+        <button type="submit" class="btn btn-primary"> Dodaj v lastno kniznico   </button>
+
+    </div>
+    </form>
+}
+

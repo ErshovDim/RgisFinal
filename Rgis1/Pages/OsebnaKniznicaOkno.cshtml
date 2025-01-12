@@ -1,0 +1,49 @@
+﻿@page
+@model RGIS.Pages.OsebnaKniznicaOknoModel
+@{
+
+<div class="text-center">
+    <h1 class="display-4">Osebna Kniznica</h1>
+</div>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>naziv</th>
+            <th>avotr</th>
+            <th>kategorija</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        @foreach (Knjiga knjiga in Model.seznamKnig.kniznica)
+        {
+            <tr>
+                <td>
+                    <a asp-page="/KnjigaOkno" asp-route-ID="@knjiga.Id">
+                        @knjiga.naziv
+                    </a>
+
+                </td>
+                <td>
+                    @knjiga.Avotr
+                </td>
+                <td>
+                    @knjiga.kategorija
+                </td>
+               
+                        
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+    <form method="post">
+        <td>
+            <input name="name" />
+            <button type="submit"> Delete</button>
+        </td>
+    </form>
+}

@@ -1,0 +1,42 @@
+﻿@page
+@model RGIS.Pages.KategoriOknoModel
+@{
+
+<div class="text-center">
+    <h1 class="display-4">@Model.seznamKnig.seznam[0].kategorija</h1>
+</div>
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>naziv</th>
+                <th>avotr</th>
+                <th>kategorija</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Knjiga knjiga in Model.seznamKnig.seznam)
+            {
+                <tr>
+                    <td>
+                        <a asp-page="/KnjigaOkno" asp-route-ID="@knjiga.Id">
+                            @knjiga.naziv
+                        </a>
+
+                    </td>
+                    <td>
+                        @knjiga.Avotr
+                    </td>
+                    <td>
+                        
+                            @knjiga.kategorija
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+}
