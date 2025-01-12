@@ -24,7 +24,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./Rgis1/Rgis1
+          context: .
           file: ./Rgis1/Rgis1/Dockerfile
           push: true
           tags: dmitryershovferi/rgisfi:latest, dmitryershovferi/rgisfi:${{ github.sha }}
